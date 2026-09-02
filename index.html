@@ -50,28 +50,11 @@
         <span class="hero-title-ghost">D</span>rive your<br>dream car
       </h1>
 
-      <div class="hero-car" data-depth="35" id="heroCar">
-        <!-- 3D car built from CSS, no external images -->
-        <div class="car3d car3d--sedan">
-          <div class="car-shadow"></div>
-          <div class="car-body">
-            <div class="car-cabin"></div>
-            <div class="car-hood"></div>
-            <div class="car-trunk"></div>
-            <div class="car-window win-front"></div>
-            <div class="car-window win-rear"></div>
-            <div class="car-grille"></div>
-            <div class="headlight hl-l"></div>
-            <div class="headlight hl-r"></div>
-            <div class="wheel wl-front"><div class="rim"></div></div>
-            <div class="wheel wl-rear"><div class="rim"></div></div>
-            <div class="reflection"></div>
-          </div>
-        </div>
-      </div>
+      <div class="hero-car-3d" id="heroCar3D"></div>
 
       <a href="cars.html" class="btn-outline hero-cta" data-depth="45">View Cars</a>
     </div>
+    <p class="drag-hint">← drag or swipe to rotate →</p>
   </section>
 
   <!-- SHOWCASE / SPLIT SECTION -->
@@ -123,6 +106,8 @@
   <span class="footer-dim">Concept build — 3D interface demo</span>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/car3d.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
