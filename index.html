@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1RST MOTORS — Drive your dream car</title>
+<meta name="description" content="Exclusive cars. Sell &amp; rent your dream car with F1RST MOTORS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="index.html" class="logo">F1RST<span>MOTORS</span></a>
+  <nav class="nav-links">
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#news">News</a>
+    <a href="cars.html" class="active">Discover Cars</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchToggle" aria-label="Search">
+      <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="16.2" y1="16.2" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="icon-btn" aria-label="Language">
+      <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+    <button class="btn-ghost">Sign in</button>
+  </div>
+</header>
+
+<div class="search-panel" id="searchPanel">
+  <input type="text" placeholder="Search cars..." aria-label="Search cars">
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <p class="eyebrow-plain">exclusive cars</p>
+
+    <div class="hero-stage" id="heroStage">
+      <div class="hero-layer hero-bg" data-depth="8"></div>
+
+      <h1 class="hero-title" data-depth="18">
+        <span class="hero-title-ghost">D</span>rive your<br>dream car
+      </h1>
+
+      <div class="hero-car" data-depth="35" id="heroCar">
+        <!-- 3D car built from CSS, no external images -->
+        <div class="car3d car3d--sedan">
+          <div class="car-shadow"></div>
+          <div class="car-body">
+            <div class="car-cabin"></div>
+            <div class="car-hood"></div>
+            <div class="car-trunk"></div>
+            <div class="car-window win-front"></div>
+            <div class="car-window win-rear"></div>
+            <div class="car-grille"></div>
+            <div class="headlight hl-l"></div>
+            <div class="headlight hl-r"></div>
+            <div class="wheel wl-front"><div class="rim"></div></div>
+            <div class="wheel wl-rear"><div class="rim"></div></div>
+            <div class="reflection"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="cars.html" class="btn-outline hero-cta" data-depth="45">View Cars</a>
+    </div>
+  </section>
+
+  <!-- SHOWCASE / SPLIT SECTION -->
+  <section class="showcase" id="about">
+    <div class="showcase-copy">
+      <p class="tag">We are sell &amp; rent</p>
+      <h2>Exclusive.<br>Drive you<br><em>dream cars.</em></h2>
+      <p class="showcase-sub">A hand-picked fleet of performance cars, prepared and delivered
+      to your door — buy outright or rent for the weekend.</p>
+    </div>
+
+    <div class="showcase-stage" id="showStage">
+      <div class="car3d car3d--sport" data-depth="30">
+        <div class="car-shadow"></div>
+        <div class="car-body sport">
+          <div class="car-cabin"></div>
+          <div class="car-hood"></div>
+          <div class="car-trunk"></div>
+          <div class="car-window win-front"></div>
+          <div class="car-window win-rear"></div>
+          <div class="car-grille"></div>
+          <div class="headlight hl-l"></div>
+          <div class="headlight hl-r"></div>
+          <div class="wheel wl-front"><div class="rim"></div></div>
+          <div class="wheel wl-rear"><div class="rim"></div></div>
+          <div class="reflection"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thumb-strip">
+      <button class="thumb active" data-car="m8">
+        <span class="thumb-swatch swatch-m8"></span> BMW M8
+      </button>
+      <button class="thumb" data-car="m4">
+        <span class="thumb-swatch swatch-m4"></span> BMW M4
+      </button>
+      <button class="thumb" data-car="911">
+        <span class="thumb-swatch swatch-911"></span> Porsche 911
+      </button>
+      <a href="cars.html" class="btn-solid see-all">SEE ALL CARS →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 F1RST MOTORS</span>
+  <span class="footer-dim">Concept build — 3D interface demo</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
